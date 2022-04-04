@@ -41,11 +41,6 @@
         "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0).",
         "tymon/jwt-auth": "Allows to use JWT-Auth support (^1.0)."
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "6.0-dev"
-        }
-    },
     "config": {
         "sort-packages": true
     },
