@@ -27,7 +27,7 @@
     },
     "require": {
         "php": ">=7.3 || ^8.0",
-        "laravie/api": "dev-master",
+        "laravie/api": "4.x-dev",
         "nikic/fast-route": "^1.3",
         "orchestra/foundation": "dev-master"
     },
