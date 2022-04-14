@@ -49,7 +49,7 @@ You can also choose to add new path to autoload to detect `lumen/app` using PSR-
 }
 ```
 
-> It is recommended for you to set `"prefer-stable": true` and `"minimum-stability": "dev"` as both `laravie/api` and `php-open-source-saver/jwt-auth` doesn't have a stable release for latest Lumen yet.
+> It is recommended for you to set `"prefer-stable": true` and `"minimum-stability": "dev"` as both `laravie/api` and `tymon/jwt-auth` doesn't have a stable release for latest Lumen yet.
 
 ## API Routing
 
@@ -61,14 +61,14 @@ require base_path('lumen/routes/api.php');
 
 ## JWT Authentication
 
-Install `php-open-source-saver/jwt-auth` via the command line:
+Install `tymon/jwt-auth` via the command line:
 
-    composer require "php-open-source-saver/jwt-auth=^1.0"
+    composer require "tymon/jwt-auth=^1.0"
 
 Next, enable the following service providers from `lumen/bootstrap.php`:
 
 ```php
-$app->register(PHPOpenSourceSaver\JWTAuth\Providers\LumenServiceProvider::class);
+$app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
 
 // ...
 
@@ -81,7 +81,7 @@ Next, we need to create a secret key for JWT:
 
 This would add `JWT_SECRET` value to your main `.env` file.
 
-Finally you can extends the default `App\User` model to support `PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject`:
+Finally you can extends the default `App\User` model to support `Tymon\JWTAuth\Contracts\JWTSubject`:
 
 ```php
 <?php 

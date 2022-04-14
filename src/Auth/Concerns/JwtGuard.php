@@ -3,7 +3,7 @@
 namespace Laravel\Lumen\Auth\Concerns;
 
 use Illuminate\Support\Facades\Auth;
-use PHPOpenSourceSaver\JWTAuth\Facades\JWTAuth;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 trait JwtGuard
 {

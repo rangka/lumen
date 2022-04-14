@@ -2,15 +2,15 @@
 
 namespace Laravel\Lumen\Testing;
 
-use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
-use PHPOpenSourceSaver\JWTAuth\Facades\JWTAuth;
+use Tymon\JWTAuth\Contracts\JWTSubject;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 trait AuthenticateWithJWT
 {
     /**
      * Get token from user.
      *
-     * @param \PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject $user
+     * @param \Tymon\JWTAuth\Contracts\JWTSubject $user
      *
      * @return string
      */
@@ -22,7 +22,7 @@ trait AuthenticateWithJWT
     /**
      * Get token from user.
      *
-     * @param \PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject $user
+     * @param \Tymon\JWTAuth\Contracts\JWTSubject $user
      *
      * @return string
      *
