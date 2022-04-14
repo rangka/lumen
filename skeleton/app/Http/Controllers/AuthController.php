@@ -6,8 +6,8 @@ use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\Request;
 use Laravel\Lumen\Http\ResponseFactory;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
-use Tymon\JWTAuth\Exceptions\JWTException;
-use Tymon\JWTAuth\JWTAuth;
+use PHPOpenSourceSaver\JWTAuth\Exceptions\JWTException;
+use PHPOpenSourceSaver\JWTAuth\JWTAuth;
 
 /**
  * User authentication is handled via JSON Web Tokens (JWT).

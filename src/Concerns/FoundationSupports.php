@@ -2,9 +2,9 @@
 
 namespace Laravel\Lumen\Concerns;
 
+use Laravie\Dhosa\HotSwap;
 use Orchestra\Foundation\Auth\User;
 use Orchestra\Foundation\Bootstrap\UserAccessPolicy;
-use Orchestra\Model\HS;
 
 trait FoundationSupports
 {

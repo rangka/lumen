@@ -9,9 +9,10 @@ This repository contains the core code of the Orchestra Lumen. If you want to bu
 [![Latest Unstable Version](https://poser.pugx.org/orchestra/lumen/v/unstable)](//packagist.org/packages/orchestra/lumen)
 [![License](https://poser.pugx.org/orchestra/lumen/license)](https://packagist.org/packages/orchestra/lumen)
 
-* [Installation](#installation)
-* [API Routing](#api-routing)
-* [JWT Authentication](#jwt-authentication)
+- [Lumen Framework for Orchestra Platform](#lumen-framework-for-orchestra-platform)
+  - [Installation](#installation)
+  - [API Routing](#api-routing)
+  - [JWT Authentication](#jwt-authentication)
 
 ## Installation
 
@@ -48,7 +49,7 @@ You can also choose to add new path to autoload to detect `lumen/app` using PSR-
 }
 ```
 
-> It is recommended for you to set `"prefer-stable": true` and `"minimum-stability": "dev"` as both `laravie/api` and `tymon/jwt-auth` doesn't have a stable release for latest Lumen yet.
+> It is recommended for you to set `"prefer-stable": true` and `"minimum-stability": "dev"` as both `laravie/api` and `php-open-source-saver/jwt-auth` doesn't have a stable release for latest Lumen yet.
 
 ## API Routing
 
@@ -60,14 +61,14 @@ require base_path('lumen/routes/api.php');
 
 ## JWT Authentication
 
-Install `tymon/jwt-auth` via the command line:
+Install `php-open-source-saver/jwt-auth` via the command line:
 
-    composer require "tymon/jwt-auth=^1.0"
+    composer require "php-open-source-saver/jwt-auth=^1.0"
 
 Next, enable the following service providers from `lumen/bootstrap.php`:
 
 ```php
-$app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
+$app->register(PHPOpenSourceSaver\JWTAuth\Providers\LumenServiceProvider::class);
 
 // ...
 
@@ -80,7 +81,7 @@ Next, we need to create a secret key for JWT:
 
 This would add `JWT_SECRET` value to your main `.env` file.
 
-Finally you can extends the default `App\User` model to support `Tymon\JWTAuth\Contracts\JWTSubject`:
+Finally you can extends the default `App\User` model to support `PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject`:
 
 ```php
 <?php 
