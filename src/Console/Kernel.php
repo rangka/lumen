@@ -61,6 +61,15 @@ class Kernel implements KernelContract
     }
 
     /**
+     * Bootstrap the application for artisan commands.
+     *
+     * @return void
+     */
+    public function bootstrap() {
+        //
+    }
+
+    /**
      * Set the request instance for URL generation.
      *
      * @param  \Illuminate\Contracts\Foundation\Application  $app
